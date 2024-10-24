@@ -7,8 +7,8 @@ on:
 env:
     MONGODB_CLUSTER_ADDRESS: gh-actions-cluster.jasvi.mongodb.net
     MONGODB_DB_NAME: gha-demo
-    MONGODB_USERNAME: aleku
-    MONGODB_PASSWORD: Alexdoctari19!
+    MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+    MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
     PORT: 8080
 jobs:
   test:
